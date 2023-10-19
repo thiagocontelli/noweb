@@ -3,7 +3,9 @@ import { extendTheme } from 'native-base'
 export const theme = extendTheme({
   colors: {
     primary: {
+      50: '#EFFCF4',
       600: '#1BD15D',
+      800: '#088435'
     }
   },
   fontConfig: {
