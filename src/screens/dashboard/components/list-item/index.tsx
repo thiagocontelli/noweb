@@ -11,7 +11,7 @@ type Props = {
 export function ListItem({ item }: Props) {
   const theme = useTheme()
   const dateFormatter = new Intl.DateTimeFormat('default', { hour: 'numeric', minute: 'numeric', hour12: true })
-  
+
   return (
     <TouchableOpacity>
       <Box mb={4} px={6} py={4}>
@@ -20,7 +20,7 @@ export function ListItem({ item }: Props) {
             <Icon name={'briefcase-fill'} color={theme.colors.gray[500]} />
             <VStack>
               <Text fontSize={'md'} fontWeight={'medium'}>{item.title}</Text>
-              <Text color={'text.500'} fontWeight={'medim'}>{dateFormatter.format(item.time)} • {item.status}</Text>
+              <Text color={'text.500'} fontWeight={'medium'}>{dateFormatter.format(item.time)} • {item.status}</Text>
             </VStack>
           </HStack>
           <Icon name={'arrow-right-s-line'} color={theme.colors.gray[500]} />
