@@ -1,6 +1,6 @@
 import { Button, FlatList, HStack, Image, Input, ScrollView, Text, VStack, View, useTheme } from 'native-base';
 import Icon from 'react-native-remix-icon';
-import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import userPicture from '../../assets/user-picture.png';
 import { Box } from '../../components';
 import { ListItem } from './components';
@@ -8,11 +8,10 @@ import { mockData } from './mockData';
 
 export function Dashboard() {
   const theme = useTheme()
-  const insets = useSafeAreaInsets()
 
   return (
     <ScrollView>
-      <SafeAreaView style={{ padding: 28, marginBottom: insets.bottom }}>
+      <SafeAreaView style={{ padding: 28 }}>
         <Input
           InputLeftElement={
             <View ml={2}>
