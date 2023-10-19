@@ -1,7 +1,8 @@
-import { Box, HStack, Text, VStack, useTheme } from "native-base";
+import { HStack, Text, VStack, useTheme } from "native-base";
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-remix-icon';
 import { MockItem } from "../../mockData";
+import { Box } from "../../../../components";
 
 type Props = {
   item: MockItem
