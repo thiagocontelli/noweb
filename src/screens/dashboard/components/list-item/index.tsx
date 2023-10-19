@@ -10,8 +10,8 @@ type Props = {
 
 export function ListItem({ item }: Props) {
   const theme = useTheme()
-  const dateFormatter = new Intl.DateTimeFormat('en-us', { hour: 'numeric', minute: 'numeric' })
-
+  const dateFormatter = new Intl.DateTimeFormat('default', { hour: 'numeric', minute: 'numeric', hour12: true })
+  
   return (
     <TouchableOpacity>
       <Box mb={4} px={6} py={4}>
