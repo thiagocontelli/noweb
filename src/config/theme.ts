@@ -4,6 +4,7 @@ export const theme = extendTheme({
   colors: {
     primary: {
       50: '#EFFCF4',
+      400: '#87E4A7',
       600: '#1BD15D',
       800: '#088435'
     }
@@ -25,5 +26,20 @@ export const theme = extendTheme({
     heading: 'Poppins',
     body: 'Poppins',
     mono: 'Poppins'
+  },
+  components: {
+    Input: {
+      defaultProps: {
+        variant: 'filled',
+        bg: 'gray.200',
+        size: 'lg'
+      },
+      baseStyle() {
+        return {
+          fontWeight: 'semibold',
+          borderRadius: '2xl'
+        }
+      },
+    }
   }
 })

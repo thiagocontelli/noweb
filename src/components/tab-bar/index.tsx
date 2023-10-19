@@ -40,7 +40,7 @@ export function TabBar({ descriptors, navigation, state }: Props) {
             }
 
             return (
-              <>
+              <View key={index}>
                 {index === 2 ? (
                   <Button
                     onPress={onPress}
@@ -68,7 +68,7 @@ export function TabBar({ descriptors, navigation, state }: Props) {
                     {getIcon()}
                   </TouchableOpacity>
                 )}
-              </>
+              </View>
             )
           })}
         </HStack>
