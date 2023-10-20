@@ -26,7 +26,19 @@ export function TabNavigator() {
         name={SCREENS.MESSAGE}
         component={Message}
       />
-      <Tab.Screen options={{ tabBarIcon: ({ color }) => <Icon name={'user-4-fill'} color={color} /> }} name={SCREENS.PROFILE} component={Profile} />
+      <Tab.Screen
+        options={{
+          tabBarIcon: ({ color }) => <Icon name={'user-4-fill'} color={color} />,
+          headerTitle: () => <Text fontWeight={'semibold'} fontSize={'2xl'}>Perfil</Text>,
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: 'transparent',
+          },
+          headerShown: true
+        }}
+        name={SCREENS.PROFILE}
+        component={Profile}
+      />
     </Tab.Navigator>
   )
 }
