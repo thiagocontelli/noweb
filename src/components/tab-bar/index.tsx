@@ -10,7 +10,7 @@ export function TabBar({ descriptors, navigation, state }: Props) {
 
   return (
     <View style={{ backgroundColor: 'transparent', position: 'absolute', left: 0, bottom: 0, right: 0 }}>
-      <LinearGradient colors={['rgba(255, 255, 255, 0.025)', 'rgba(255, 255, 255, 0.8)', 'rgba(255, 255, 255, 1)']}>
+      <LinearGradient colors={['rgba(255, 255, 255, 0.025)', 'rgba(255, 255, 255, 1)', 'rgba(255, 255, 255, 1)', 'rgba(255, 255, 255, 1)']}>
         <HStack mb={6} mt={8} mx={4} justifyContent={'space-between'} alignItems={'center'}>
           {state.routes.map((route, index) => {
             const { options } = descriptors[route.key]
