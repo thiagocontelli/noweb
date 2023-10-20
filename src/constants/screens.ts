@@ -3,5 +3,6 @@ export const SCREENS = {
   NEW_DEMAND: 'NewDemand',
   CALENDAR: 'Calendar',
   MESSAGE: 'Message',
-  PROFILE: 'Profile'
+  PROFILE: 'Profile',
+  NEW_DEMAND_STACK: 'NewDemandStack'
 }
