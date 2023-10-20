@@ -10,7 +10,7 @@ import { NewDemandContextProvider } from "./use-new-demand";
 export function NewDemand() {
   return (
     <ScrollView>
-      <SafeAreaView style={{ paddingHorizontal: 28 }}>
+      <SafeAreaView style={{ paddingHorizontal: 20 }}>
         <NewDemandContextProvider>
           <VStack space={5}>
             <Text

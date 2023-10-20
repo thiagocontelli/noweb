@@ -94,6 +94,7 @@ export function Deadline() {
           <Modal.Header>Urgência</Modal.Header>
           <Modal.Body>
             <FlatList
+              scrollEnabled={false}
               data={urgencies}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPressUrgency(item)}>
@@ -114,6 +115,7 @@ export function Deadline() {
           <Modal.Header>Tempo esperado</Modal.Header>
           <Modal.Body>
             <FlatList
+              scrollEnabled={false}
               data={deadlines}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPressDeadline(item)}>

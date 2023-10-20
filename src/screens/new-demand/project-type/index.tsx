@@ -59,6 +59,7 @@ export function ProjectType() {
           <Modal.Header>Tipo do projeto</Modal.Header>
           <Modal.Body>
             <FlatList
+              scrollEnabled={false}
               data={projectTypes}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPress(item)}>
