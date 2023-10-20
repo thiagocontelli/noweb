@@ -1,19 +1,21 @@
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { HStack, Text, VStack, useTheme } from "native-base";
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-remix-icon';
-import { MockItem } from "../../mockData";
 import { Box } from "../../../../components";
+import { RootStackParamsList } from "../../../../config/root-stack-params";
+import { MockItem } from "../../mockData";
 
 type Props = {
   item: MockItem
-}
+} & NativeStackScreenProps<RootStackParamsList>
 
-export function ListItem({ item }: Props) {
+export function ListItem({ item, navigation }: Props) {
   const theme = useTheme()
   const dateFormatter = new Intl.DateTimeFormat('default', { hour: 'numeric', minute: 'numeric', hour12: true })
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('Project')}>
       <Box mb={4}>
         <HStack justifyContent={'space-between'} alignItems={'center'}>
           <HStack space={3} alignItems={'center'}>

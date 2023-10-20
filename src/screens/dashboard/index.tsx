@@ -5,8 +5,12 @@ import userPicture from '../../assets/user-picture.png';
 import { Box } from '../../components';
 import { ListItem } from './components';
 import { mockData } from './mockData';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamsList } from '../../config/root-stack-params';
 
-export function Dashboard() {
+type Props = NativeStackScreenProps<RootStackParamsList>
+
+export function Dashboard(props: Props) {
   const theme = useTheme()
 
   return (
@@ -15,8 +19,8 @@ export function Dashboard() {
         data={mockData}
         contentContainerStyle={{ padding: 20, paddingBottom: 125 }}
         keyExtractor={item => item.id}
-        renderItem={({ item }) => <ListItem item={item} />}
-        ListHeaderComponent={() => (
+        renderItem={({ item }) => <ListItem item={item} {...props} />}
+        ListHeaderComponent={() => ( 
           <VStack space={4} mb={4}>
             <Input
               InputLeftElement={

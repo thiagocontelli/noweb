@@ -4,5 +4,7 @@ export const SCREENS = {
   CALENDAR: 'Calendar',
   MESSAGE: 'Message',
   PROFILE: 'Profile',
-  NEW_DEMAND_STACK: 'NewDemandStack'
+  NEW_DEMAND_STACK: 'NewDemandStack',
+  DASHBAORD_STACK: 'DashboardStack',
+  PROJECT: 'Project'
 }
