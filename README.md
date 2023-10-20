@@ -7,6 +7,7 @@
 ## Como rodar o projeto
 
  - <code>git clone https://github.com/thiagocontelli/noweb.git</code>
+ - <code>cd noweb</code>
  - <code>npm i</code>
  - <code>npm start</code>
  - Após rodar é só escolher entre IOS e Android (no terminal):
