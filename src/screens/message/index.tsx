@@ -20,21 +20,7 @@ export function Message() {
                 <Text fontWeight={'semibold'}>{item.name}</Text>
                 <Text color={'text.500'} numberOfLines={1}>{item.lastMessage}</Text>
               </VStack>
-
-              {item.unreadMessagesAmount > 0 ? (
-                <Text
-                  p={1}
-                  px={2}
-                  fontSize={'xs'}
-                  bg={'red.500'}
-                  borderRadius={'full'}
-                  color={'white'}
-                >
-                  {item.unreadMessagesAmount}
-                </Text>
-              ) : (
-                <Icon name='arrow-right-s-line' />
-              )}
+              <Icon name='arrow-right-s-line' />
             </HStack>
           </Box>
         </TouchableOpacity>
