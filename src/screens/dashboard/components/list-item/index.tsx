@@ -2,7 +2,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { HStack, Text, VStack, useTheme } from "native-base";
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-remix-icon';
-import { Box } from "../../../../components";
+import { Box } from "../../../../components/box";
 import { RootStackParamsList } from "../../../../config/root-stack-params";
 import { MockItem } from "../../mockData";
 

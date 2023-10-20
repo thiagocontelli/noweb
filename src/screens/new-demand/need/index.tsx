@@ -4,7 +4,7 @@ import { TouchableOpacity } from "react-native";
 import AdImage from '../../../assets/ad.svg';
 import DevelopmentImage from '../../../assets/development.svg';
 import IdentityImage from '../../../assets/identity.svg';
-import { Box } from "../../../components";
+import { Box } from "../../../components/box";
 import { ListItem, needs } from '../mockData';
 import { useNewDemand } from '../use-new-demand';
 

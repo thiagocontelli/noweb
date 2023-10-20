@@ -1,8 +1,8 @@
 import { Avatar, FlatList, HStack, Text, VStack } from "native-base";
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-remix-icon';
-import { Box } from "../../components";
 import { chats } from "./mockData";
+import { Box } from "../../components/box";
 
 export function Message() {
   return (

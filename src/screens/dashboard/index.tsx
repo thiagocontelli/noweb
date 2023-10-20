@@ -2,8 +2,8 @@ import { Button, FlatList, HStack, Image, Input, Text, VStack, View, useTheme } 
 import Icon from 'react-native-remix-icon';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import userPicture from '../../assets/user-picture.png';
-import { Box } from '../../components';
-import { ListItem } from './components';
+import { Box } from '../../components/box';
+import { ListItem } from './components/list-item';
 import { mockData } from './mockData';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamsList } from '../../config/root-stack-params';

@@ -1,6 +1,0 @@
-export * from './dashboard'
-export * from './new-demand'
-export * from './profile'
-export * from './calendar'
-export * from './message'
-export * from './project'

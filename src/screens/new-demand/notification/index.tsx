@@ -3,7 +3,7 @@ import { HStack, Text, VStack, useTheme } from 'native-base';
 import { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-remix-icon';
-import { Box } from '../../../components';
+import { Box } from '../../../components/box';
 import { useNewDemand } from '../use-new-demand';
 
 export function Notification() {

@@ -2,7 +2,7 @@ import { Avatar, HStack, SectionList, Text, VStack, useTheme } from "native-base
 import { TouchableOpacity } from "react-native";
 import Icon from "react-native-remix-icon";
 import userPicture from '../../assets/user-picture.png';
-import { Box } from "../../components";
+import { Box } from "../../components/box";
 import { menuItems } from "./mockData";
 
 export function Profile () {

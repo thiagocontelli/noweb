@@ -3,9 +3,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { useTheme } from "native-base"
 import { TouchableOpacity } from "react-native"
 import Icon from 'react-native-remix-icon'
-import { Box } from ".."
 import { SCREENS } from "../../constants/screens"
-import { NewDemand } from "../../screens"
+import { Box } from "../box"
+import { NewDemand } from "../../screens/new-demand"
 
 const Stack = createNativeStackNavigator()
 
@@ -16,7 +16,7 @@ export function NewDemandStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name={SCREENS.NEW_DEMAND_STACK}
+        name={SCREENS.NEW_DEMAND}
         component={NewDemand}
         options={{
           title: '',

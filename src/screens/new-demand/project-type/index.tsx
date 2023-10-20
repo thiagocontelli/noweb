@@ -2,7 +2,7 @@ import { FlatList, HStack, Modal, Text, VStack, View, useTheme } from 'native-ba
 import React, { useState } from 'react';
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-remix-icon';
-import { Box } from "../../../components";
+import { Box } from "../../../components/box";
 import { ListItem, projectTypes } from "../mockData";
 import { useNewDemand } from '../use-new-demand';
 
