@@ -19,7 +19,8 @@ export function StackNavigator() {
         name={SCREENS.NEW_DEMAND_STACK}
         component={NewDemand}
         options={{
-          headerTitle: () => (
+          title: '',
+          headerLeft: () => (
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Box p={3} borderRadius={'2xl'}>
                 <Icon name='arrow-left-line' color={theme.colors.gray[500]} />
