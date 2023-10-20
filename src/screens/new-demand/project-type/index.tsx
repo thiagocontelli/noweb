@@ -33,7 +33,6 @@ export function ProjectType() {
         </Text>
         <TouchableOpacity onPress={() => setIsOpen(true)}>
           <Box
-            p={4}
             borderRadius={'xl'}
             borderWidth={showProjectTypeError ? 1 : 0}
             borderColor={showProjectTypeError ? 'red.500' : undefined}

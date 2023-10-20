@@ -64,8 +64,6 @@ export function Deadline() {
           </TouchableOpacity>
           <TouchableOpacity style={{ flex: 1 }} onPress={() => setDeadlineIsOpen(true)}>
             <Box
-              px={2}
-              py={4}
               borderRadius={'xl'}
               borderWidth={showDeadlineError ? 1 : 0}
               borderColor={showDeadlineError ? 'red.500' : undefined}
@@ -98,7 +96,7 @@ export function Deadline() {
               data={urgencies}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPressUrgency(item)}>
-                  <Box p={4} mb={2}>
+                  <Box mb={2}>
                     <Text fontWeight={'medium'}>{item.title}</Text>
                   </Box>
                 </TouchableOpacity>
@@ -119,7 +117,7 @@ export function Deadline() {
               data={deadlines}
               renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPressDeadline(item)}>
-                  <Box p={4} mb={2}>
+                  <Box mb={2}>
                     <Text fontWeight={'medium'}>{item.title}</Text>
                   </Box>
                 </TouchableOpacity>

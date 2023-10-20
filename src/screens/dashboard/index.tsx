@@ -31,7 +31,7 @@ export function Dashboard() {
               <Text fontWeight={'semibold'} fontSize={'2xl'}>Olá</Text>
               <Text fontWeight={'medium'} fontSize={'2xl'}>Kathryn</Text>
             </VStack>
-            <Box bg={'primary.400'}>
+            <Box bg={'primary.400'} p={6}>
               <HStack justifyContent={'space-between'}>
                 <VStack flex={1} justifyContent={'space-between'} alignItems={'flex-start'}>
                   <VStack space={1}>

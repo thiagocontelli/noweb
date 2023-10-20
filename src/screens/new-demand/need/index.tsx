@@ -52,7 +52,6 @@ export function Need() {
               <TouchableOpacity style={{ flex: 1 }} onPress={() => onNeedChange(item)}>
                 <Box
                   backgroundColor={need?.title === item.title ? 'primary.600' : 'gray.200'}
-                  p={4}
                   borderRadius={'xl'}
                   borderWidth={showNeedError ? 1 : 0}
                   borderColor={showNeedError ? 'red.500' : undefined}

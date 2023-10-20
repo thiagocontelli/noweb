@@ -14,7 +14,7 @@ export function ListItem({ item }: Props) {
 
   return (
     <TouchableOpacity>
-      <Box mb={4} px={6} py={4}>
+      <Box mb={4}>
         <HStack justifyContent={'space-between'} alignItems={'center'}>
           <HStack space={3} alignItems={'center'}>
             <Icon name={'briefcase-fill'} color={theme.colors.gray[500]} />

@@ -7,7 +7,7 @@ export function Box (props: Props) {
     <NBBox
       bg={'gray.200'}
       borderRadius={'3xl'}
-      p={6}
+      p={4}
       {...props}
     />
   );

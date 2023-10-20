@@ -32,7 +32,7 @@ export function Notification() {
       </Text>
 
       <HStack space={4}>
-        <Box flex={1} p={4} borderRadius={'xl'}>
+        <Box flex={1} borderRadius={'xl'}>
           <HStack alignItems={'center'} space={2}>
             <Icon name='notification-2-fill' color={theme.colors.gray[500]} />
             <Text fontWeight={'medium'}>{dateFormatter.format(notificationTime)}</Text>
